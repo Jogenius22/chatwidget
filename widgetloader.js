@@ -19,7 +19,7 @@
 
   // Create the iframe that will contain the chat widget, but keep it hidden initially
   const iframe = document.createElement('iframe');
-  iframe.src = 'https://beyin-rtb7.vercel.app/chatwidget';  // replace with the URL of your deployed Next.js app
+  iframe.src = 'https://beyin-rtb7-gcdw5jx0h-jogenius22.vercel.app/chatwidget';  // replace with the URL of your deployed Next.js app
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.style.border = 'none';
