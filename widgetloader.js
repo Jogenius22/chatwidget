@@ -11,7 +11,7 @@
 
   // Create the chat icon
   const chatIcon = document.createElement('img');
-  chatIcon.src = 'https://your-domain.com/chat-icon.png'; // replace with the URL of your chat icon image
+  chatIcon.src = 'https://beyin-rtb7.vercel.app/playground_assets/gpt-200h.png'; // replace with the URL of your chat icon image
   chatIcon.style.width = '50px';
   chatIcon.style.height = '50px';
   chatIcon.style.cursor = 'pointer';
@@ -19,7 +19,7 @@
 
   // Create the iframe that will contain the chat widget, but keep it hidden initially
   const iframe = document.createElement('iframe');
-  iframe.src = 'https://your-nextjs-app.vercel.app/chatwidget';  // replace with the URL of your deployed Next.js app
+  iframe.src = 'https://beyin-rtb7.vercel.app/chatwidget';  // replace with the URL of your deployed Next.js app
   iframe.style.width = '100%';
   iframe.style.height = '100%';
   iframe.style.border = 'none';
