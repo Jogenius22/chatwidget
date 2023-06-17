@@ -6,6 +6,8 @@
   container.style.bottom = '20px';
   container.style.right = '20px';
   container.style.backgroundColor = 'transparent';
+  container.style.backgroundColor = '#282a36';
+container.style.borderRadius = '8px';
 
   container.style.zIndex = '1000';  // Ensure the chat widget appears above all other page elements
   document.body.appendChild(container);
