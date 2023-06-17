@@ -29,6 +29,8 @@
   iframe.style.height = '550px';
   iframe.style.border = 'none';
   iframe.style.backgroundColor = 'transparent';
+  iframe.style.padding = '0';
+iframe.style.margin = '0';
 
   iframe.style.display = 'none';  // keep the iframe hidden initially
   iframe.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.25)';  // Give the chat widget a drop shadow for a "raised" effect
