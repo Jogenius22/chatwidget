@@ -1,17 +1,8 @@
 (function () {
-  // Create a container for the chat widget
-  const container = document.createElement('div');
-  container.id = 'my-chat-widget-container';
-  container.style.position = 'fixed';
-  container.style.bottom = '20px';
-  container.style.right = '20px';
-  container.style.zIndex = '1000';  // Ensure the chat widget appears above all other page elements
-  document.body.appendChild(container);
-
   // Create the chat icon
   const chatIcon = document.createElement('img');
   chatIcon.src = 'https://raw.githubusercontent.com/Jogenius22/chatwidget/main/chatbot.png'; // replace with the URL of your chat icon image
- chatIcon.style.width = '50px';
+  chatIcon.style.width = '50px';
   chatIcon.style.height = '50px';
   chatIcon.style.cursor = 'pointer';
   chatIcon.style.position = 'fixed';
@@ -23,23 +14,28 @@
   // Create the iframe that will contain the chat widget, but keep it hidden initially
   const iframe = document.createElement('iframe');
   iframe.src = 'https://beyin-rtb7-gcdw5jx0h-jogenius22.vercel.app/chatwidget';  // replace with the URL of your deployed Next.js app
-   iframe.style.width = '400px';
-  iframe.style.height = '550px';
+  iframe.style.width = '350px';
+  iframe.style.height = '500px';
+  iframe.style.position = 'fixed';
+  iframe.style.bottom = '20px';
+  iframe.style.right = '20px';
   iframe.style.border = 'none';
   iframe.style.display = 'none';  // keep the iframe hidden initially
   iframe.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.25)';  // Give the chat widget a drop shadow for a "raised" effect
-  container.appendChild(iframe);
+  iframe.style.zIndex = '1000';  // Ensure the chat widget appears above all other page elements
+  document.body.appendChild(iframe);
 
   // Create the "close" button
   const closeButton = document.createElement('button');
   closeButton.textContent = 'X';
-  closeButton.style.position = 'absolute';
-  closeButton.style.top = '16px';
-  closeButton.style.right = '16px';
+  closeButton.style.position = 'fixed';
+  closeButton.style.top = '20px';
+  closeButton.style.right = '20px';
   closeButton.style.backgroundColor = 'white';
   closeButton.style.border = '1px solid black';
   closeButton.style.display = 'none';  // keep the close button hidden initially
-  container.appendChild(closeButton);
+  closeButton.style.zIndex = '1001';  // Ensure the close button appears above the chat widget
+  document.body.appendChild(closeButton);
 
   // Show the chat widget and close button, and hide the chat icon, when the chat icon is clicked
   chatIcon.addEventListener('click', function () {
