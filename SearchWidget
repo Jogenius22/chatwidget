@@ -14,6 +14,15 @@ const chatWidget = (function() {
     widget.style.padding = '16px';
     widget.style.backgroundColor = '#fff';
     widget.style.zIndex = '9999';
+
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://chatbot-ui-lite-sooty.vercel.app/';
+    iframe.style.border = 'none';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+
+    widget.appendChild(iframe);
+    
     return widget;
   };
 
